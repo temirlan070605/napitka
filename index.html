@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коктейли</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #cocktails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .cocktail {
+            display: none; /* скрываем изображения, чтобы показать только нужное */
+            width: 320px;
+            height: auto;
+        }
+        .cocktail img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script src="script/index.js"></script>
+    <h1>Коктейли</h1>
+    <div>
+        <input type="text" id="searchInput" placeholder="Введите название коктейля" />
+        <button id="searchBtn">Поиск</button>
+        <button id="resetBtn">Удалить</button>
+    </div>
+    <div id="cocktails">
+        <div class="cocktail" data-name="Margarita">
+            <img src="images/margarita.jpg" alt="Margarita">
+            <p>Margarita</p>
+        </div>
+        <div class="cocktail" data-name="Mojito">
+            <img src="images/mojito.jpg" alt="Mojito">
+            <p>Mojito</p>
+        </div>
+        <div class="cocktail" data-name="Daiquiri">
+            <img src="images/dauqi.jpg" alt="Daiquiri">
+            <p>Daiquiri</p>
+        </div>
+        <div class="cocktail" data-name="Martini">
+            <img src="images/martini.jpg" alt="Martini">
+            <p>Martini</p>
+        </div>
+        <div class="cocktail" data-name="Pina Colada">
+            <img src="images/pini.jpg" alt="Pina Colada">
+            <p>Pina Colada</p>
+        </div>
+        <div class="cocktail" data-name="Cosmopolitan">
+            <img src="images/cosmopol.jpg" alt="Cosmopolitan">
+            <p>Cosmopolitan</p>
+        </div>
+    </div>
+</body>
+</html>
